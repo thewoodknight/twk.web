@@ -1,0 +1,6 @@
+---
+layout: none
+---
+User-agent: *
+Allow: /*.html$
+Sitemap: https://dev.thewoodknight.com/sitemap.xml

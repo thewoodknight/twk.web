@@ -1,0 +1,25 @@
+---
+title: 
+permalink: /links
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+            <h1>Links</h1>
+            <div class="row">
+                <ul>
+                    {% for l in site.data.links %}
+                        <li>
+                        <a href="{{ l.link }}">{{ l.title }}</a>
+                        </li>   
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

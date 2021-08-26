@@ -1,0 +1,52 @@
+---
+layout: page
+title: FAQ
+permalink: /faq
+last_modified_at: 2021-08-17
+---
+Over the years I've had a lot of questions, here are some of the most commonly asked...
+
+<div id="accordion">
+  {% capture answera %}
+    I'm just one dude, sharing what I make. There isn't a team to answer and filter out emails.
+    When I did have the contact form up, the vast majority of emails I recieved were (in no particular order)
+
+    <ul>
+      <li>Spam</li>
+      <li>Questions about a video with no context to the video, which would have been better as a comment on said video</li>
+      <li>Questions about where to buy tools or wood, while not having the decency to provide where in the world they were</li>
+      <li>Specific questions about tools that I don't own, that were under warranty, and could have been asked of the manufacturer</li>
+    </ul>
+  {% endcapture %}
+
+  {% include accordion_object.html 
+    id="one"
+    question="Why can't I find your email/contact form?" 
+    answer=answera %}
+
+  {% include accordion_object.html 
+    id="two"
+    question="But seriously, I'm in Australia, where can I buy wood?" 
+    answer="Never has this been asked by somebody without 3 hours drive of me." %}
+  
+  {% capture answerfour %}
+    Typically, I'm using whats sold as "KD HWD F17", which is a construction graded label for Victorian Ash (which is also known/sold as Tasmanian Oak, Mountain Ash, Messmate, etc).<br /><br />
+
+    The main difference with "construction graded" is it is to do with strength (pine is ~F5) and flaws, rather than appearance at all. I have to accept a little bit more "character", but it is considearbly cheaper
+  {% endcapture %}
+
+  {% include accordion_object.html 
+      id="four"
+      question="What timber are you using?" 
+      answer=answerfour %}
+
+  {% capture answerb %}
+  I'm constantly surprised at how popular the countersink bit is – <a href="https://www.youtube.com/watch?v=J7L2MMX7L_M">I even made a video to directly address it!</a>.
+  I use a combination of zero-flute countersink bits and Carbitool countersink
+  {% endcapture %}
+
+  {% include accordion_object.html 
+    id="three"
+    question="What countersink do you use?" 
+    answer=answerb %}
+</div>

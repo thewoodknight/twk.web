@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-sm-4">
+        <div class="sidebar">        
+            <div class="sidebar-section">
+                <h5>Plans</h5>
+                <ul>
+                {% assign tags =  site.plans | map: 'tags' | uniq %}
+                {% for tag in tags %}
+                <li><a href="/tag/{{ tag | slugify }}/">{{ tag }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        {{ content }}
+    </div>
+</div>

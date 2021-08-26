@@ -1,0 +1,76 @@
+## bundle exec htmlproofer --allow_hash_href --url-ignore "/about/,/feed/,/plans/" --assume-extension --empty_alt_ignore ./_site
+
+title: The Wood Knight
+email: 
+description: >- # this means to ignore newlines until "baseurl:"
+  From Weekend Warrior to Wood Knight
+url: "https://www.thewoodknight.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: assets/images/twklogo_150_150.png
+twitter_username: thewoodknight
+github_username:  thewoodknight
+include: ["_pages", "_redirects", "calculator", "_framework", "_bin"]
+exclude:
+  - .jekyll-cache
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-toc
+  - jekyll-category-pages
+  - jekyll-purgecss
+  - jekyll-seo-tag
+
+collections:
+  plans:
+      output: true
+      permalink: /:collection/:name
+#  links:
+#      output: false
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Pagination 
+paginate: 13
+paginate_path: /page:num/
+
+#theme related
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+feed:
+  path: /feed/index.xml
+
+#Markdown
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: false
+
+#jekyll-seo-tag
+author: Paul Jenkins
+
+twitter:
+  username: thewoodknight
+  card: summary
+
+social:
+  name: The Wood Knight
+  instagram: https://www.instagram.com/thewoodknight/
+  twitch: https://www.twitch.tv/thewoodknight 
+  twitter: https://twitter.com/thewoodknight
+  youtube: https://www.youtube.com/c/PaulJenkinsTheWoodKnight
+  links:
+   - https://www.instagram.com/thewoodknight/
+   - https://www.twitch.tv/thewoodknight 
+   - https://twitter.com/thewoodknight
+   - https://www.youtube.com/c/PaulJenkinsTheWoodKnight
+
+#assets
+css_dir: "/assets/css/"
+
+picture:
+  ignore_missing_images: true

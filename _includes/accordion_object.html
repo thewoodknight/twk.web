@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header" id="heading{{include.id}}">
+      <span class="mb-0">        
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{include.id}}" aria-expanded="false" aria-controls="collapse{{include.id}}">
+{{ include.question }}
+        </button>
+      </span>
+    </div>
+    <div id="collapse{{include.id}}" class="collapse" aria-labelledby="heading{{include.id}}" data-parent="#accordion">
+      <div class="card-body">
+{{ include.answer }}
+      </div>
+    </div>
+  </div>

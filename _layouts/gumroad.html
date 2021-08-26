@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
+
+<div class="row">
+  <div class="col-sm">
+  {% if page.image %}
+      {% picture jpt-webp "{{ site.baseurl }}/{{ page.image }}"  alt="{{post.title}}"  %}
+      <!-- <img class="featured-image text-center mx-auto rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}"> -->
+  {% endif %}
+  </div>
+
+  <div class="col-sm">
+    <h2>{{ page.title }}</h2>
+         <!-- Plan Tags -->
+         <div class="after-post-tags">
+          <ul class="tags">
+              {% assign sortedCategories = page.tags | sort %}
+              {% for category in sortedCategories %}
+              <li>
+                  <a href="{{ site.baseurl }}/tag/{{ category | slugify }}/">{{ category }}</a>
+              </li>
+              {% endfor %}
+          </ul>
+        </div>
+        <!-- End Tags -->
+        
+    {% if page.price > 0 %}
+      <h4>${{ page.price }}AUD</h4>
+      {% include gumroad_buy.html id=page.gumroad %}
+    {% else %}
+      <h4>FREE!</h4>
+      {% include gumroad.html id=page.gumroad %}
+    {% endif %}
+    
+
+    <br />
+  </div>
+</div>
+<h4>Plans are in metric</h4>
+
+{{ content }}
+{% if page.preview %}
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <span class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4>Preview</h4></button>
+        </span>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body"><img src="{{ page.preview }}" alt="preview" /></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <span class="mb-0">        
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><h4>Videos</h4></button>
+        </span>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          {% for video in page.youtube %}
+          {% include youtube.html id=video %}<br />
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% else %}
+  <h3>Videos</h3>
+  {% for video in page.youtube %}
+  {% include youtube.html id=video %}<br />
+  {% endfor %}
+{% endif %}

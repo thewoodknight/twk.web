@@ -1,0 +1,14 @@
+# Top Menu
+topmenu:
+
+- title: About
+  url: "about/"
+
+- title: FAQ
+  url: "faq/"
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""

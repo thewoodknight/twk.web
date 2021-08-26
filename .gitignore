@@ -1,0 +1,9 @@
+/public/
+/resources/
+content/
+out/
+.jekyll-cache/
+_site/
+node_modules/
+package.json
+package-lock.json

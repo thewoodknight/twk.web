@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+{% if page.url == "/" %} 
+<section class="featured-posts">
+    <h1 class="frontpage">Latest Plans</h1>
+    <div class="row">
+        {% assign sortedPlans = site.plans | sort: "date" | reverse %}
+        {% for plan in sortedPlans limit:3 %}
+            {% include planbox.html %}
+        {% endfor %}
+    </div>
+    <h3><a href="/plans/">All Plans...</a></h3>
+</section>
+{% endif %}
+
+<!-- Posts List -->
+<section class="featured-posts">
+  <h1 class="frontpage">Latest Posts</h1>
+  <div class="row">
+    {% for post in paginator.posts limit:1 %}
+      <div class="col-sm card-group" style="padding-left: 6px; padding-right:6px;">
+        <div class="card" style="margin-bottom:15px;">
+          {% picture "{{ post.featured_image }}" class="postboximage" alt="{{post.title}}"  %}
+          <a class="postboximageoverlay" href="{{ post.url }}">
+              <div class="postinternalblock">
+                  <span class="post-date">{{ post.date | date_to_string }}</span>
+                  <h2 class="card-title h4 serif-font">{{ post.title }}</h2>
+              </div>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    {% assign my_counter = 0 %}
+    {% for post in paginator.posts %}
+      {% assign my_counter = my_counter | plus: 1 %}
+      {% if my_counter > 1 %}
+        {% unless post.featured == true %}
+          {% include postbox.html %}
+        {% endunless %}
+      {% endif %}
+  {% endfor %}
+  </div>
+</section>
+
+<!-- Pagination -->
+<div class="bottompagination">
+  <span class="navigation" role="navigation">
+      {% include pagination.html %}
+  </span>
+</div>

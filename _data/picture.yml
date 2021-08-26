@@ -1,0 +1,7 @@
+presets:
+  frontpage:
+    widths: [360]
+    formats: [webp, original]
+    sizes:
+      mobile: 80vw
+    size: 360px

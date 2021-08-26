@@ -1,0 +1,23 @@
+<!-- begin plan -->
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card" style="margin-bottom:15px;" >
+        <a href="{{ plan.url }}">
+            {% if plan.image %}
+                {% picture "/{{ plan.image }}" 1:1 center class="planboximage" alt="{{plan.title}}" %}
+            {% endif %}
+            <div class="ribbon down "> 
+                <div class="content  {% if plan.price > 0 %} {% else %}free {% endif %}">
+                    {% if plan.price > 0 %}
+                        <h5>${{ plan.price }}AUD</h5>
+                    {% else %}
+                        <h5>FREE!</h5>
+                    {% endif %}
+                </div>
+            </div>
+            <a href="{{ plan.url }}">
+                <h2 class="card-title">{{ plan.title }}</h2>
+            </a>
+    </div>
+    
+</div>
+<!-- end plan -->
