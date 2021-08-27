@@ -16,7 +16,7 @@ toc: true
 
 A mission style side table, built as a gift for my mum for Christmas (2019).
 
-**Tools** 
+#### Tools 
 * Tablesaw
 * Large crosscut sled or circ saw/track saw + smaller crosscut sled
 * Jointer
@@ -30,7 +30,7 @@ A mission style side table, built as a gift for my mum for Christmas (2019).
 * Drill (for attaching z-clips)
 * Mitre saw is optional for breaking down large boards
 
-**Supplies**
+#### Supplies
 * I used two 140x45x2400mm Vic Ash boards for the two side tables, plus some jarrah I had laying around for the stiles.
 * 4 Z-clips and screws per side table
 * Clear finish (I used a satin hardwax oil)
