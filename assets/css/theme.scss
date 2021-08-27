@@ -321,8 +321,8 @@ span.post-name a,span.post-read-more a:hover {
     margin-bottom:1.5rem;
 }
 .article-post {
-    font-size: 1.18em;
-    line-height: 1.64;
+    font-size: 1em;
+    //line-height: 1.64;
 	color:rgba(0,0,0,.8);
     code {
         font-size:15px;
@@ -749,6 +749,36 @@ h2.card-title { font-size: 1.5em; font-family: Inter; font-weight: 900; }
     &.down > .content {
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 50% 100%, 0 calc(100% - 8px));
       }
+}
+
+a, figure {
+    display: inline-block;
+}
+figcaption {
+    margin: 10px 0 0 0;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+    color: #bb3333;
+}
+figure {
+    margin-left: 150px;
+    border : 1px solid #cacaca;
+    padding: 5px;
+    img:hover {
+        transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    img {
+        transition: transform 0.2s;
+        -webkit-transition: -webkit-transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+        -o-transition: -o-transform 0.2s;
+    }
+    
 }
 
 @import "fruity.css"

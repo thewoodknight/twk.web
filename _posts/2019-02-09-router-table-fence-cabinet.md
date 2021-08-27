@@ -9,7 +9,7 @@ featured_image: /assets/images/posts/2019-02/routertable_cover.webp
 categories:
   - Plans
   - Projects
-  - Workshop
+  - Shop Project
 format: video
 video: zVGx497QYdI
 

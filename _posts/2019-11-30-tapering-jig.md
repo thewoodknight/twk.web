@@ -10,6 +10,7 @@ categories:
   - Jigs
   - Plans
   - Projects
+  - Shop Project
 video: hxsP0vaKuvY
 ---
  

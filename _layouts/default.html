@@ -37,10 +37,10 @@
               {% endfor %}
               
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="categoryDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Categories
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdownMenuLink">
                   {% for category in site.categories %}
                   {% capture category_name %}{{ category | first }}{% endcapture %}
                   <li class="dropdown-item" ><a href="/category/{{category_name | slugify}}">{{category_name}}</a></li>
@@ -49,10 +49,10 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="plansDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plans
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu" aria-labelledby="plansDropdownMenuLink">
                   <li class="dropdown-item" ><a href="/plans">All</a></li>
                   <li class="divider"></li>
                   {% assign tags =  site.plans | map: 'tags' | uniq %}

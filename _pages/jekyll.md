@@ -4,15 +4,30 @@ title: Jekyll Optimisation
 permalink: /jekyll
 last_modified_at: 2021-08-16
 ---
+After years using Wordpress for TWK's website, I was sick of the constant updates, security maintenance, and generally "things break on updates". Performance was also a big concern.
 
-For TWK's website, I set about making an ultra-optimised [Jekyll](https://jekyllrb.com/) site output, within reason.
+{% include image.html 
+image="/assets/images/posts/2021-08/before.jpg"
+title="before"
+width="523"
+caption="Before.." %}
 
-Perhaps a more efficient site would forgo any JS, handcrafting every line of CSS, but I wanted something that was reasonable to build, maintain, and still "fast enough".
+So for the new version of the website, I set about making an ultra-optimised, can't-be-hacked-because-its-just-HTML website using [Jekyll](https://jekyllrb.com/). 
+
+{% include image.html 
+image="/assets/images/posts/2021-08/after.jpg"
+title="after"
+width="518"
+caption="...After! Not sure why accessibility took a hit" %}
+
+"Within reason", at least. Perhaps a more efficient site would forgo any JS, handcrafting every line of CSS, but I wanted something that was reasonable to build, maintain, and still "fast enough".
 
 #### GH-Pages
 The elephant in the room to get out of the way is these optimisations will not run on GH-Pages. You *may* be able to use GH-Actions to build your site, then copy the output HTML to a repo that gets served up. GH-Pages is very limited in plugin support, and you can't run other CLI stuff alongside it during the build process.
 
 This does, however, work amazing on [Cloudflare Pages](https://pages.cloudflare.com/).
+
+### Getting it fast..
 
 #### PurgeCSS
 Reducing the total amount of CSS is good - less parsing by the browser, less data to download. If you use something like Bootstrap, you'll invariably have a *lot* of unused CSS.

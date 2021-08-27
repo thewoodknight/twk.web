@@ -8,6 +8,7 @@ featured_image: /assets/images/posts/2019-12/routersubbase/ProjectCoverPhoto.web
 layout: post
 categories:
   - Projects
+  - Shop Project
 format: video
 video: eMn9dKZ5zsE
 toc: true

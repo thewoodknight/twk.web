@@ -8,7 +8,9 @@ date: 2020-10-31
 permalink: /a-safer-way-to-route-small-parts/
 featured_image: /assets/images/posts/2020-10/SmallPartsCover.webp
 categories:
-  - Blog
+  - Jigs
+  - Plans
+  - Shop Project
 video: WznkmSa88z0
 
 ---

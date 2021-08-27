@@ -9,7 +9,7 @@ featured_image: /assets/images/posts/2018-03/IMG_6011-1-1.webp
 categories:
   - Furniture
   - Plans
-  - Projects
+  - Board Games
 video: ri6hfoszYps
 
 ---

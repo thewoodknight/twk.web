@@ -11,10 +11,10 @@ layout: default
 
   {% if paginator.previous_page != nil or paginator.next_page != nil %}
     <!-- Show page number if we have multiple pages -->
-    <h1 class="frontpage">Category index page {{ paginator.page }} / {{ paginator.total_pages }} for &ldquo;{{ page.title }}&rdquo;</h1>
+    <h3 class="frontpage">Posts tagged with &ldquo;{{ page.title }}&rdquo;</h3>
   {% else %}
     <!-- No page number if we only have a single page -->
-    <h1 class="frontpage">Category index for &ldquo;{{ page.title }}&rdquo;</h1>
+    <h3 class="frontpage">Posts tagged with &ldquo;{{ page.title }}&rdquo;</h3>
   {% endif %}
 
     <div class="row">

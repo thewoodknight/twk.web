@@ -14,7 +14,7 @@ youtube:
   - bY1T7hle9uk
   - lZSxNPCh5Jo
 complete: true
-preview: /assets/images/plans/mission_style_bedside_drawer_overview.webp
+preview: /assets/images/plans/mission_style_bedside_drawer_overview.jpg
 ---
 
 These plans are not a full step by step – they are intended to provide all the dimensions and extra details from the four part video series.
