@@ -8,3 +8,5 @@ twitch https://www.twitch.tv/thewoodknight
 /ScalableMachineCart.zip /assets/pdfs/ScalableMachineCart.zip
 /Mission%20Style%20Side%20Table.pdf /assets/pdfs/Mission%20Style%20Side%20Table.pdf
 /TimbeconCrossCutSled.pdf /assets/pdfs/TimbeconCrossCutSled.pdf
+/feed /feed/index.xml
+/feed/ /feed/index.xml
