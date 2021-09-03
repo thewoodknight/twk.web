@@ -2,6 +2,7 @@
 layout: gumroad
 title: Small Parts Routing Jig
 excerpt: A jig for routing small parts
+permalink: /product/small-parts-router-jig-v2/
 price: 0
 image: assets/images/plans/SmallPartsRoutingJig/smallpartsroutingjig.webp
 date: 2021-03-20

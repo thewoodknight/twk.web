@@ -1,13 +1,30 @@
-## bundle exec htmlproofer --allow_hash_href --url-ignore "/about/,/feed/,/plans/" --assume-extension --empty_alt_ignore ./_site
+## Not a config, but useful for making sure all links are valid/etc. See https://github.com/gjtorikian/html-proofer
+# bundle exec htmlproofer --allow_hash_href --url-ignore "/about/,/feed/,/plans/" --assume-extension --empty_alt_ignore ./_site
 
-title: The Wood Knight
-email: 
-description: >- # this means to ignore newlines until "baseurl:"
-  From Weekend Warrior to Wood Knight
-url: "https://www.thewoodknight.com" # the base hostname & protocol for your site, e.g. http://example.com
-logo: assets/images/twklogo_150_150.png
+### Some config I'm not sure if its actually needed
 twitter_username: thewoodknight
 github_username:  thewoodknight
+
+### if this isn't needed by a plugin, should be moved to a _data/social.yml format
+social:
+  name: The Wood Knight
+  instagram: https://www.instagram.com/thewoodknight/
+  twitch: https://www.twitch.tv/thewoodknight 
+  twitter: https://twitter.com/thewoodknight
+  youtube: https://www.youtube.com/c/PaulJenkinsTheWoodKnight
+  links:
+   - https://www.instagram.com/thewoodknight/
+   - https://www.twitch.tv/thewoodknight 
+   - https://twitter.com/thewoodknight
+   - https://www.youtube.com/c/PaulJenkinsTheWoodKnight
+
+# Actual config
+title: The Wood Knight
+author: Paul Jenkins
+email: 
+description: From Weekend Warrior to Wood Knight
+url: "https://www.thewoodknight.com"
+logo: assets/images/twklogo_150_150.png
 include: ["_pages", "_redirects", "calculator", "_framework", "_bin"]
 exclude:
   - .jekyll-cache
@@ -26,8 +43,6 @@ collections:
   plans:
       output: true
       permalink: /:collection/:name
-#  links:
-#      output: false
 
 sass:
   sass_dir: _sass
@@ -51,26 +66,13 @@ kramdown:
     disable: false
 
 #jekyll-seo-tag
-author: Paul Jenkins
-
 twitter:
   username: thewoodknight
   card: summary
 
-social:
-  name: The Wood Knight
-  instagram: https://www.instagram.com/thewoodknight/
-  twitch: https://www.twitch.tv/thewoodknight 
-  twitter: https://twitter.com/thewoodknight
-  youtube: https://www.youtube.com/c/PaulJenkinsTheWoodKnight
-  links:
-   - https://www.instagram.com/thewoodknight/
-   - https://www.twitch.tv/thewoodknight 
-   - https://twitter.com/thewoodknight
-   - https://www.youtube.com/c/PaulJenkinsTheWoodKnight
-
-#assets
+#css-purge
 css_dir: "/assets/css/"
 
+#jekyllpicturetag
 picture:
   ignore_missing_images: true
