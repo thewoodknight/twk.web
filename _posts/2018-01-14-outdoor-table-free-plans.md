@@ -18,4 +18,4 @@ Apron uses primarily traditional woodworking joinery -- mortise and tenon.
 
 [**Grab the free plans**][1]
 
- [1]: /assets/pdfs/Outdoor-Table-Drawing-v11-1.pdf
+ [1]: /assets/pdfs/Outdoor-Table-Drawing.pdf
