@@ -1,7 +1,14 @@
 presets:
+  frontpage_big:
+    formats: [webp, original]
+    attributes:
+      picture: 'class="postboximage"'
+
   frontpage:
     widths: [360]
     formats: [webp, original]
     sizes:
       mobile: 80vw
     size: 360px
+    attributes:
+      picture: 'class="postboximage"'
