@@ -18,6 +18,9 @@ social:
    - https://twitter.com/thewoodknight
    - https://www.youtube.com/c/PaulJenkinsTheWoodKnight
 
+# because american timezones strike back
+future: true
+
 # Actual config
 title: The Wood Knight
 author: Paul Jenkins
