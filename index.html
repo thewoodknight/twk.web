@@ -23,7 +23,9 @@ title: Home
     {% for post in paginator.posts limit:1 %}
       <div class="col-sm card-group" style="padding-left: 6px; padding-right:6px;">
         <div class="card" style="margin-bottom:15px;">
-          {% picture frontpage_big "{{ post.featured_image }}" alt="{{post.title}}"  %}
+          {% if post.featured_image %}
+            {% picture frontpage_big "{{ post.featured_image }}" alt="{{post.title}}"  %}
+          {% endif %}
           <a class="postboximageoverlay" href="{{ post.url }}">
               <div class="postinternalblock">
                   <span class="post-date">{{ post.date | date_to_string }}</span>
