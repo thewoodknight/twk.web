@@ -4,9 +4,9 @@ title: Review Policy
 permalink: /reviewpolicy
 ---
 #### The customer comes first
-My goal is to provide an honest review for my audience so that they can make an informed decisions. By sticking to these principles, it treats the audience with respect and value is added to the reviews with a track record of honesty and openness.
+My goal is to provide an honest review for my audience so that they can make an informed decision. By sticking to these principles, it treats the audience with respect and value is added to the reviews with a track record of honesty and openness.
 
-* I dont't accept payment for reviews. Payment for a review transforms it from a review into an advertisement and masquerading as such is a dishonest conflict of interest. Where an item is provided free of charge for review, this will be disclosed clearly in the video description.
+* I don't accept payment for reviews. Payment for a review transforms it from a review into an advertisement and masquerading as such is a dishonest conflict of interest. Where an item is provided free of charge for review, this will be disclosed clearly in the video description.
 
 * Once the review terms are agreed to by both parties, a poor product experience is not grounds for the review to be cancelled or deleted to avoid negative publicity. Customers expect to buy products that are adequately developed and tested to ensure performance, reliability and safety.
 
@@ -31,7 +31,7 @@ My goal is to provide an honest review for my audience so that they can make an 
 
 * Images of the product and company logo may be used on the thumbnail.
 
-* A range of links to sites where the product is for sale may be included in the description. These will often be affiliate links, as is standard practise on technology based channels.
+* A range of links to sites where the product is for sale may be included in the description. These will often be affiliate links, as is standard practise among YouTube creatores.
 
 * Videos on my channel are monetised via YouTube advertisements.
 
