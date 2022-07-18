@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem 'jekyll-category-pages'
   gem 'jekyll-purgecss'
   gem 'jekyll_picture_tag', '~> 2.0'
+  gem "jekyll-last-modified-at"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

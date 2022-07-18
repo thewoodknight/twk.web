@@ -41,6 +41,7 @@ plugins:
   - jekyll-category-pages
   - jekyll-purgecss
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 
 collections:
   plans:
