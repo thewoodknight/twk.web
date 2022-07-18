@@ -31,7 +31,7 @@ My goal is to provide an honest review for my audience so that they can make an 
 
 * Images of the product and company logo may be used on the thumbnail.
 
-* A range of links to sites where the product is for sale may be included in the description. These will often be affiliate links, as is standard practise among YouTube creatores.
+* A range of links to sites where the product is for sale may be included in the description. These will often be affiliate links, as is standard practise among YouTube creators.
 
 * Videos on my channel are monetised via YouTube advertisements.
 
