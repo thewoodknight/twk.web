@@ -51,15 +51,16 @@ post_class: post-template
         <div class="clearfix"></div>
     </div>
 
+
     <!-- Prev/Next -->
     <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
         {% if page.previous.url %}
-        <div class="col-md-4 rightborder pl-0">
+        <div class="rightborder pl-0" style="padding-left:10px;">
             <a class="thepostlink" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
         </div>
         {% endif %}
         {% if page.next.url %}
-        <div class="col-md-4 text-right pr-0">
+        <div class="text-right pr-0" style="padding-left:10px;">
             <a class="thepostlink" href="{{page.next.url }}">{{page.next.title}} &raquo;</a>
         </div>
         {% endif %}
