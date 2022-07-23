@@ -2,6 +2,7 @@
 layout: page
 title: Review Policy
 permalink: /reviewpolicy
+showlastmodified: true
 ---
 #### The customer comes first
 My goal is to provide an honest review for my audience so that they can make an informed decision. By sticking to these principles, it treats the audience with respect and value is added to the reviews with a track record of honesty and openness.

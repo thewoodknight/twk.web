@@ -4,65 +4,63 @@ archive: false
 post_class: post-template
 ---
 
-<div class="row">
-    <!-- Post Featured Image -->
-    {% if page.image %}<img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
-    <!-- End Featured Image -->
-    <div class="mainheading">             
-        <!-- Post Title -->
-        <h1 class="posttitle">{{ page.title }}</h1>      
-        <!-- Post Date -->
-        <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-            </small>
-        </p> 
+<!-- Post Featured Image -->
+{% if page.image %}<img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+<!-- End Featured Image -->
+<div class="mainheading">             
+    <!-- Post Title -->
+    <h1 class="posttitle">{{ page.title }}</h1>      
+    <!-- Post Date -->
+    <p>
+        <small>
+            <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+            {% if page.showlastmodified %}
+            (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+            {% endif %}
+        </small>
+    </p> 
 
-        <!-- Post Categories -->
-        <div class="after-post-tags">
-            <ul class="tags">
-                {% assign sortedCategories = page.categories | sort %}
-                {% for category in sortedCategories %}
-                <li>
-                    <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <!-- End Categories -->
+    <!-- Post Categories -->
+    <div class="after-post-tags">
+        <ul class="tags">
+            {% assign sortedCategories = page.categories | sort %}
+            {% for category in sortedCategories %}
+            <li>
+                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
+    <!-- End Categories -->
+</div>
 
-    <!-- Post Content -->
-    <div class="article-post serif-font">
-        {% if page.video %}
-            {% include youtube.html id=page.video %}
-        {% endif %}
+<!-- Post Content -->
+<div class="article-post serif-font">
+    {% if page.video %}
+        {% include youtube.html id=page.video %}
+    {% endif %}
 
-        {% if page.toc %}
-            <h3>Table of contents</h3>
-            {{ content | toc_only }}
-        {% endif %}
-        <div class="clearfix"></div>
-        
-        {{ content }}
-        <div class="clearfix"></div>
+    {% if page.toc %}
+        <h3>Table of contents</h3>
+        {{ content | toc_only }}
+    {% endif %}
+    <div class="clearfix"></div>
+    
+    {{ content }}
+    <div class="clearfix"></div>
+</div>
+
+
+<!-- Prev/Next -->
+<div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
+    {% if page.previous.url %}
+    <div class="rightborder pl-0" style="padding-right:10px;">
+        <a class="thepostlink" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
     </div>
-
-
-    <!-- Prev/Next -->
-    <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
-        {% if page.previous.url %}
-        <div class="rightborder pl-0" style="padding-left:10px;">
-            <a class="thepostlink" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-        </div>
-        {% endif %}
-        {% if page.next.url %}
-        <div class="text-right pr-0" style="padding-left:10px;">
-            <a class="thepostlink" href="{{page.next.url }}">{{page.next.title}} &raquo;</a>
-        </div>
-        {% endif %}
+    {% endif %}
+    {% if page.next.url %}
+    <div class="text-right pr-0" style="padding-left:10px;">
+        <a class="thepostlink" href="{{page.next.url }}">{{page.next.title}} &raquo;</a>
     </div>
+    {% endif %}
 </div>

@@ -2,7 +2,7 @@
 layout: page
 title: Jekyll Optimisation
 permalink: /jekyll
-last_modified_at: 2021-08-16
+showlastmodified: true
 ---
 After years using Wordpress for TWK's website, I was sick of the constant updates, security maintenance, and generally "things break on updates". Performance was also a big concern.
 
