@@ -20,12 +20,12 @@ permalink: /feed2/
       <title type="html">{{ post.title | xml_escape }}</title>
       <link href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
       <published>{{ post.date | date_to_xmlschema  }}</published>
-      <updated>{{ post.last_modified_at | date_to_xmlschema }}</updated>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
       <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>
-      <content  type="html" xml:base="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+      <content:encoded type="html" xml:base="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
         {% capture topcontent %} <img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ post.featured_image }}" alt="{{ post.title }}" /> {% if post.video %} <a href="https://www.youtube.com/v/{{ post.video }}">Video</a></br /> {% endif %} {% endcapture %}
-        <![CDATA[ {{ topcontent | xml_escape }} {{ post.content | xml_escape }} ]]>
-      </content>
+        <![CDATA[{{ topcontent | xml_escape }} {{ post.content | xml_escape }}]]>
+      </content:encoded>
       <author>
         <name>Paul</name>
       </author>
