@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /feed2/
+permalink: /feed/
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -24,7 +24,7 @@ permalink: /feed2/
       <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>
       <content type="html" xml:base="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
         {% capture topcontent %} <img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ post.featured_image }}" alt="{{ post.title }}" /> {% if post.video %} <a href="https://www.youtube.com/v/{{ post.video }}">Video</a></br /> {% endif %} {% endcapture %}
-        {{ topcontent | xml_escape }} {{ post.content | xml_escape }}]]
+        {{ topcontent | xml_escape }} {{ post.content | xml_escape }}
       </content>
       <author>
         <name>Paul</name>

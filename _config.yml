@@ -35,7 +35,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-feed
+ # - jekyll-feed
   - jekyll-archives
   - jekyll-toc
   - jekyll-category-pages
@@ -57,11 +57,11 @@ paginate: 13
 paginate_path: /page:num/
 
 #theme related
-feed_items: 10
-feed_update_period: daily
-feed_update_frequency: 1
-feed:
-  path: /feed/index.xml
+#feed_items: 10
+#feed_update_period: daily
+#feed_update_frequency: 1
+#feed:
+#  path: /feed/index.xml
 
 #Markdown
 markdown: kramdown
