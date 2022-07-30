@@ -23,7 +23,7 @@ permalink: /feed/
       <updated>{{ post.date | date_to_xmlschema }}</updated>
       <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>
       <content type="html" xml:base="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-        {% capture topcontent %} <img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ post.featured_image }}" alt="{{ post.title }}" /> {% if post.video %} <a href="https://www.youtube.com/v/{{ post.video }}">Video</a></br /> {% endif %} {% endcapture %}
+        {% capture topcontent %} <img class="featured-image img-fluid rounded" src="{{ post.featured_image | prepend: site.baseurl | prepend: site.url }}" alt="{{ post.title }}" /> {% if post.video %} <a href="https://www.youtube.com/v/{{ post.video }}">Video</a></br /> {% endif %} {% endcapture %}
         {{ topcontent | xml_escape }} {{ post.content | xml_escape }}
       </content>
       <author>
