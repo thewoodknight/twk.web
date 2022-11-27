@@ -10,7 +10,7 @@ categories:
   - Projects
 video: MDZZoLyThr4
 ---
-[Grab the free template](/assets/pdfs/hatchet-1.pdf)
+[Grab the free template](/assets/pdfs/hatchet.pdf)
 -------------------------------------------------------------------------------------------
 
 Making your own mallet is almost a rite of passage for woodworkers, right up there with building your own workbench and making a chopping board. Until now, I’ve only been using a ~$10 or so wooden mallet from Bunnings. To be fair to the mallet, it hasn’t done me too wrong for the abuse I’ve hurled at it, but it is far from perfect.
