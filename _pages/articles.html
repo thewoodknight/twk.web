@@ -1,0 +1,30 @@
+---
+layout: page
+title: Posts
+permalink: /articles
+showlastmodified: true
+---
+
+<!-- Posts List -->
+<ul>
+{% for post in site.posts  %}
+    <div>
+        <h5><a href="{{ post.url }}">{{post.title}}</a></h5>
+        <span class="post-date" style="font-size:0.8em;">{{ post.date | date_to_string }}</span>
+        <!-- Post Categories -->
+        <div class="after-post-tags">
+            <ul class="tags">
+                {% if post.categories %}
+                    {% assign sortedCategories = post.categories | sort %}
+                    {% for category in sortedCategories %}
+                    <li>
+                        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>
+                    </li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+        <br />
+</div>
+{% endfor %}
+</ul>
