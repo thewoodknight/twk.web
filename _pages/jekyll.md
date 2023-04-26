@@ -150,3 +150,17 @@ presets:
       mobile: 80vw
     size: 360px
 ```
+
+
+#### Installing on WSL2
+
+```
+sudo sudo apt-get install curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get install ruby-full
+sudo apt-get install build-essential --no-install-recommends
+sudo gem install jekyll bundler
+sudo apt-get install libvips
+sudo apt-get install imagemagick
+```
