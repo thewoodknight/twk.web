@@ -39,6 +39,11 @@ Recommended settings
 * Fallback to Virtual Display: On (with this set to off, hosts monitor *must* be on)
 * FPS: 60 unless going to a high refresh display
 
+Using the advanced configuration file, [you can set the audio bitrate up to 512kbps (up from 128kbps)](https://support.parsec.app/hc/en-us/articles/360040986092-Increase-Your-Audio-Bitrate). You can access the config file by going to settings, scrolling to the bottom and clicking the link.
+
+Add the line ```host_audio_bitrate = 512```, save and restart Parsec on the host.
+
+
 ##### Notes
 There are a few gotchas to be aware of 
 
@@ -46,7 +51,7 @@ There are a few gotchas to be aware of
 
 * Windows requires a mouse on the host otherwise it won't render the mouse pointer at all. Not a Parsec issue. If its a wireless mouse with a non-bluetooth receiver, the receiver alone is enough to tell Windows its plugged in, mouse can be off.
 
-* Parsec cannot handle audio that is higher than 32bit/48khz. Unlike other software where mismatched sample rates will cause slower or faster pitched audio, Parsec just goes silent. Audio is probably Parsecs greatest weakness currently, as it isn't the highest bitrate. It's adaquete for gaming, but perhaps not if you're mixing audio.
+* Parsec cannot handle audio that is higher than 32bit/48khz. Unlike other software where mismatched sample rates will cause slower or faster pitched audio, Parsec just goes silent. Audio is probably Parsecs greatest weakness currently.
 
 * If you're using a tiny PC like **Lenovo's M93p**, you may need to grab machine specific drivers to get them to install properly. The key is to get the correct graphics driver, otherwise performance will be terrible. Even Intel's HD4600 (found in the i5-4590T and other 4th gen chips) is capable of 1080p@60fps decoding in under 5ms latency. Running purely off the CPU will see that latency spike to well over 20fps.  
   At 60fps, every frame is displayed for 16.6ms. Latency at or below that number will mean no more than 1 frame of latency - completely imperceptible.   
