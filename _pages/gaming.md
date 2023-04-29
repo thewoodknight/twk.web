@@ -55,12 +55,14 @@ There are a few gotchas to be aware of
 
 * If you're using a tiny PC like **Lenovo's M93p**, you may need to grab machine specific drivers to get them to install properly. The key is to get the correct graphics driver, otherwise performance will be terrible. Even Intel's HD4600 (found in the i5-4590T and other 4th gen chips) is capable of 1080p@60fps decoding in under 5ms latency. Running purely off the CPU will see that latency spike to well over 20fps.  
   At 60fps, every frame is displayed for 16.6ms. Latency at or below that number will mean no more than 1 frame of latency - completely imperceptible.   
-  To that end, if its a M93p, install ThinkVantage System Update (TVSU) (link needed)
+  To that end, if its a M93p, install [Lenovo System Update](https://support.lenovo.com/au/en/downloads/ds012808-lenovo-system-update-for-windows-10-7-32-bit-64-bit-desktop-notebook-workstation)
 
 ### WOL (Wake-On-Lan)
 Wake On Lan (WOL) allows you to turn on your computer by sending a command from another device (such as your phone), even from the off state. When WOL works, it's magical, but hard to track down when it doesn't. 
 
-WOL requires the computer being woken up to be connected via ethernet, not wifi.
+~~WOL requires the computer being woken up to be connected via ethernet, not wifi.~~
+
+Many modern Wifi cards do support WOL over Wifi, but check your card/chipset for specifics.
 
 ##### In BIOS
 Different brands and different models within the same brands will have different BIOS layouts and different labels for the settings, so it's impossible to give an exact guide.
